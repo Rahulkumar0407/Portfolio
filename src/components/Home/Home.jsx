@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { TextPlugin } from 'gsap/TextPlugin';
 import './Home.css';
-import resumePdf from './resume.pdf';
 
 import myPhoto from '../../assets/Dp.jpeg';
 
