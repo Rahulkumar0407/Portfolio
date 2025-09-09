@@ -51,7 +51,7 @@ const Home = () => {
 
         <div className="home-buttons reveal-on-load">
           <a href="#contact" className="home-button primary">Connect with me</a>
-          <a href={resumePdf} className="home-button secondary" target="_blank" rel="noopener noreferrer">My resume</a>
+          <a href="https://drive.google.com/file/d/1L0ZqPZ25SES3FkLY8XKXwzSNC4EhvB2z/view?usp=sharing" className="home-button secondary" target="_blank" rel="noopener noreferrer">My resume</a>
         </div>
       </div>
     </section>
