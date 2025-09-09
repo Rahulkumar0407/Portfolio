@@ -1,0 +1,48 @@
+/* src/index.css */
+:root {
+  --primary-color: #000000;
+  --secondary-color: #0a0a0a;
+  --tertiary-color: #1a1a1a;
+  --text-color: #ffffff;
+  --text-secondary: #c0c0c0;
+  --accent-color: #923de6;
+  --secondary-accent: #f06;
+
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--accent-color), var(--secondary-accent));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #a750ff, #ff2979);
+}

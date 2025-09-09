@@ -1,0 +1,49 @@
+/* src/App.css */
+.section {
+  min-height: 100vh;
+  padding: 120px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(to right, var(--accent-color), var(--secondary-accent));
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 5%;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,30 @@
+/* src/components/Footer/Footer.css */
+
+.footer {
+  text-align: center;
+  padding: 40px 8%;
+  background: var(--secondary-color);
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer .social-links {
+  margin-bottom: 20px;
+}
+
+.footer .social-links a {
+  color: var(--text-secondary);
+  font-size: 1.8rem;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
