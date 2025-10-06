@@ -1,0 +1,191 @@
+/* src/components/About/About.css */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo-card {
+  width: 300px;
+  height: 350px;
+  background-color: var(--tertiary-color);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--secondary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(146, 61, 230, 0.3);
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Makes the photo circular */
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  /* Adds the circular gradient border */
+  border: 5px solid transparent;
+  background: linear-gradient(var(--primary-color), var(--primary-color)) padding-box,
+              linear-gradient(to right, var(--accent-color), var(--secondary-accent)) border-box;
+}
+
+.about-photo-card p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.about-content-text {
+  flex: 2;
+  min-width: 400px;
+  padding-left: 30px;
+}
+
+.about-content-text h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.about-content-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.skills-progress-bars {
+  margin-top: 30px;
+}
+
+.skill-bar-item {
+  margin-bottom: 20px;
+}
+
+.skill-bar-item h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #333;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, var(--accent-color), var(--secondary-accent));
+  border-radius: 5px;
+}
+
+.about-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 800px;
+  padding-top: 40px;
+  border-top: 1px solid #2a2a2a;
+}
+
+.stat-item {
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-color), var(--secondary-accent));
+  opacity: 0.5;
+}
+
+.stat-item h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--accent-color), var(--secondary-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+  .about-content-text {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .about-content-text {
+    min-width: unset;
+  }
+  .about-photo-card {
+    width: 280px;
+    height: auto; /* Allow height to adjust */
+    padding-bottom: 30px;
+  }
+  .about-photo {
+    width: 150px;
+    height: 150px;
+  }
+  .about-stats {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+}
