@@ -15,10 +15,9 @@ gsap.registerPlugin(ScrollTrigger);
 const projectsData = [
   {
     title: 'Chat App',
-    description:
-      "A full-stack, real-time chat application built with React, Node.js, and Socket.IO. Features a responsive interface with a live "user is typing" indicator, enabling instant communication in a group chat.",
-    thumbnail: ChatAppThumb,
-    demo: 'https://gup-shup-frontend-dib4.onrender.com',
+    description: 'A full-stack, real-time chat application built with React, Node.js, and Socket.IO. Features a responsive interface with a live "user is typing" indicator, enabling instant communication in a group chat.',
+thumbnail: ChatAppThumb,
+demo: 'https://gup-shup-frontend-dib4.onrender.com',
   },
   {
     title: 'Lamborghini Landing Page',
