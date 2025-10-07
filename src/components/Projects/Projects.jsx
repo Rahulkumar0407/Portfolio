@@ -9,6 +9,7 @@ import './Projects.css';
 import ChatAppThumb from '../../assets/Chatapp.png';
 import LamboThumb from '../../assets/Lambo.png';
 import RaybanThumb from '../../assets/Rayban.png';
+import NexaThumb from '../../assets/NexaThumb.png'; // Make sure to add this image
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,8 +17,8 @@ const projectsData = [
   {
     title: 'Chat App',
     description: 'A full-stack, real-time chat application built with React, Node.js, and Socket.IO. Features a responsive interface with a live "user is typing" indicator, enabling instant communication in a group chat.',
-thumbnail: ChatAppThumb,
-demo: 'https://gup-shup-frontend-dib4.onrender.com',
+    thumbnail: ChatAppThumb,
+    demo: 'https://gup-shup-frontend-dib4.onrender.com',
   },
   {
     title: 'Lamborghini Landing Page',
@@ -32,6 +33,13 @@ demo: 'https://gup-shup-frontend-dib4.onrender.com',
       'A stylish, interactive landing page concept inspired by the iconic Ray-Ban brand. Developed with HTML, CSS, and JavaScript, enhanced by GSAP and Shery.js',
     thumbnail: RaybanThumb,
     demo: 'https://rahulgiveszero.netlify.app/',
+  },
+  {
+    title: 'NexaGen-AI',
+    description:
+      'An AI-powered personalized career and skills advisor. I led the frontend development for this hackathon project, creating a dynamic and responsive user interface.',
+    thumbnail: NexaThumb,
+    demo: 'https://nexagen.netlify.app/',
   },
 ];
 
